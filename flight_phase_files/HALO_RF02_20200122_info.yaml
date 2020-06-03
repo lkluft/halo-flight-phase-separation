@@ -24,59 +24,126 @@ remarks:
 - Descending Cirrus (9-13.5km) coming from West and South of the circle.
 - Away from the southwest edge of the track the air was almost entirely cloud free.
 segments:
-- kind: circle
-  name: c1
-  start: 2020-01-22 15:18:17
-  end: 2020-01-22 16:13:02
-- kind: circle_break
-  name: cb1to2
-  start: 2020-01-22 16:13:02
-  end: 2020-01-22 16:31:19
-- kind: circle
-  name: c2
-  start: 2020-01-22 16:31:19
-  end: 2020-01-22 17:26:29
-- kind: circle_break
-  name: cb2to3
-  start: 2020-01-22 17:26:29
-  end: 2020-01-22 17:43:08
-- kind: circle
-  name: c3
-  start: 2020-01-22 17:43:08
-  end: 2020-01-22 18:38:02
-- kind: baccardi_calibration
-  name: baccardi_cal
+- kinds:
+  - circle
+  name: Circle 1
+  irregularities:
+  - Circle starts 30 s before first launch to include the last sonde
+  segment_id: HALO-0122_c1
+  start: 2020-01-22 15:17:48
+  end: 2020-01-22 16:13:04
+  good_dropsondes: 12
+- kinds:
+  - circle_break
+  name: Break between circle 1 and 2
+  irregularities: []
+  segment_id: HALO-0122_cb1
+  start: 2020-01-22 16:13:05
+  end: 2020-01-22 16:30:19
+- kinds:
+  - circle
+  name: Circle 2
+  irregularities: []
+  segment_id: HALO-0122_c2
+  start: 2020-01-22 16:30:20
+  end: 2020-01-22 17:26:52
+  good_dropsondes: 12
+- kinds:
+  - circle_break
+  name: Break between circle 2 and 3
+  irregularities: []
+  segment_id: HALO-0122_cb2
+  start: 2020-01-22 17:26:44
+  end: 2020-01-22 17:42:08
+- kinds:
+  - circle
+  name: Circle 3
+  irregularities: 
+  - Circle starts 70 s before first launch to avoid pitch change in end of circle
+  segment_id: HALO-0122_c3
+  start: 2020-01-22 17:41:58
+  end: 2020-01-22 18:38:44
+  good_dropsondes: 11
+- kinds:
+  - baccardi_calibration
+  name: Baccardi calibration
+  irregularities: []
+  segment_id: HALO-0122_bc1
   start: 2020-01-22 18:54:07
   end: 2020-01-22 19:08:55
-- kind: straight_leg
-  name: leg1_above_cirrus
+- kinds:
+  - straight_leg
+  name: Leg 1 above cirrus
+  irregularities: []
+  segment_id: HALO-0122_sl1
   start: 2020-01-22 19:08:55
   end: 2020-01-22 19:18:35
-- kind: straight_leg
-  name: leg2_below_cirrus
+- kinds:
+  - straight_leg
+  name: Leg 2 below cirrus
+  irregularities: []
+  segment_id: HALO-0122_sl2
   start: 2020-01-22 19:25:59
   end: 2020-01-22 19:33:01
-- kind: circle
-  name: c4
-  start: 2020-01-22 19:45:09
-  end: 2020-01-22 20:40:04
-- kind: circle
-  name: c5
-  start: 2020-01-22 21:01:09
-  end: 2020-01-22 21:56:52
-- kind: circle_break
-  name: cb5to6
-  start: 2020-01-22 21:56:52
-  end: 2020-01-22 22:10:05
-- kind: circle
-  name: c6
-  start: 2020-01-22 22:10:05
-  end: 2020-01-22 23:00:01
-- kind: straight_leg
-  name: leg3_over_meteor
+- kinds:
+  - circle
+  name: Circle 4
+  irregularities: []
+  segment_id: HALO-0122_c4
+  start: 2020-01-22 19:44:10
+  end: 2020-01-22 20:43:22
+  good_dropsondes: 12
+- kinds:
+  - circle_break
+  name: Break between circle 4 and 5
+  irregularities: []
+  segment_id: HALO-0122_cb3
+  start: 2020-01-22 20:43:22
+  end: 2020-01-22 21:00:09
+- kinds:
+  - circle
+  name: Circle 5
+  irregularities: []
+  segment_id: HALO-0122_c5
+  start: 2020-01-22 21:00:09
+  end: 2020-01-22 21:59:46
+  good_dropsondes: 11
+- kinds:
+  - circle
+  name: Circle 6
+  irregularities:
+  - Circle is only 357.13 deg
+  segment_id: HALO-0122_c6
+  start: 2020-01-22 21:58:47
+  end: 2020-01-22 23:00:32
+  good_dropsondes: 11
+- kinds:
+  - straight_leg
+  name: Leg 3 over R/V Meteor
+  irregularities: []
+  segment_id: HALO-0122_sl3
   start: 2020-01-22 23:01:37
   end: 2020-01-22 23:18:07
-- kind: lidar_calibration
-  name: lidar_cal
+- kinds:
+  - lidar_leg
+  name: Lidar leg
+  irregularities: []
+  segment_id: HALO-0122_ll1
   start: 2020-01-22 23:25:01
   end: 2020-01-22 23:40:59
+- kinds:
+  - circling
+  name: Circling 1
+  irregularities: []
+  segment_id: HALO-0122_o1
+  start: 2020-01-22 15:17:17
+  end: 2020-01-22 18:38:57
+  good_dropsondes: 35
+- kinds:
+  - circling
+  name: Circling 2
+  irregularities: []
+  segment_id: HALO-0122_o2
+  start: 2020-01-22 19:44:10
+  end: 2020-01-22 23:00:32
+  good_dropsondes: 34
